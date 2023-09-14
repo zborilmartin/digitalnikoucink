@@ -104,7 +104,7 @@
    * color-2(#343D35)
    * color-3(#FEF5E4)
    */
-	--color-1: hsla(35, 87%, 49%, 1);
+	--color-1: #ea8f10;
 	--color-2: hsla(127, 8%, 22%, 1);
 	--color-3: hsla(39, 93%, 95%, 1);
 
@@ -353,8 +353,17 @@
 
  #nadpis-nabidka { 	
 	color: var(--color-1);
+	margin-bottom: 0;
  }
 
+ #nadpis-nabidka2 { 	
+	color: var(--color-white);
+	margin-bottom: 0;
+ }
+
+ #nadpis-forma { 	
+	color: var(--color-1);
+ }
 
 /* ====================================================================
  * # CSS RESET
@@ -2800,7 +2809,15 @@ td:last-child {
 
 .show-ctr .list-items__item-header {
 	display      : flex;
-	margin-bottom: var(--vspace-0_75);
+	/*margin-bottom: var(--vspace-0_75);*/
+	margin-bottom: 0;
+	align-items  : baseline;
+}
+
+.s-asynchr .list-items__item-header {
+	display      : flex;
+	/*margin-bottom: var(--vspace-0_75);*/
+	margin-bottom: 0;
 	align-items  : baseline;
 }
 
@@ -3130,7 +3147,8 @@ td:last-child {
 }
 
 .grid-list-items__item {
-	margin-bottom: var(--vspace-0_5);
+	/*margin-bottom: var(--vspace-0_5);*/
+	margin-bottom: 0;
 }
 
 /* ------------------------------------------------------------------- 
@@ -3312,6 +3330,15 @@ td:last-child {
 	margin: 0;
 }
 
+.rightside {
+	position:fixed;
+    right: 0; /* Positions the button on the right side of the page */
+}
+
+nav .s-header__contact-btn {
+	margin: 0;
+}
+
 /* --------------------------------------------------------------------
  * ## mobile menu toggle
  * -------------------------------------------------------------------- */
@@ -3456,6 +3483,7 @@ td:last-child {
 
 	.s-header__contact {
 		margin-top: var(--vspace-1_5);
+		float:right;
 	}
 
 	.s-header__contact .btn {
@@ -4384,6 +4412,7 @@ td:last-child {
  * ------------------------------------------------------------------- */
 .ss-copyright {
 	margin: 0 var(--vspace-2) 0 0;
+	font-size  : var(--text-xs);
 }
 
 .ss-copyright a {
@@ -4793,3 +4822,4 @@ td:last-child {
 .contact-list li {
 	padding-left: 0;
 }
+
